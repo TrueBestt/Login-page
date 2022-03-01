@@ -1,0 +1,114 @@
+/* Za pomocą gwiazdki resetujemy niektóre właściwości
+na całej naszej stronie */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+input, select {
+    padding: 6px 8px;
+    background-color:#efefef;
+    border: none;
+    margin: 4px 0;
+    height: 25px;
+    width:44%;
+    border-radius: 30px;
+}
+h2 {
+    margin-bottom: 30px;
+    font-size: 37px;
+}
+.decorate {
+    background-color: rgb(245, 143, 11);
+    padding-left: 5px;
+    padding-right: 1px;
+
+}
+select {
+    height: 38px;
+    width:49%;
+    padding:6px 8px;
+    margin-left: 4px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+.leftSide {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide {
+    flex:2;
+    background-image: url(/assets/image1.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    height: 100vh;
+}
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email, .password, .username, .city {
+    width:100%;
+}
+.city {
+    display: flex;
+}
+.email input {
+    width:94%;
+}
+.agree {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.check {
+    height:15px;
+
+}
+.agree label {
+    font-size: 10px;
+}
+
+.submitBtn {
+    height: 35px;
+    width: 190px;
+    font-weight: 700;
+    background: rgb(210,148,32);
+    background: linear-gradient(90deg, rgba(210,148,32,1) 0%, rgb(87, 37, 141) 78%);
+    font-size:16px;
+    color:#fff;
+    transition: 1s;
+    transition-property: background;
+}
+.submitBtn:hover {
+    background: rgb(210,148,32);
+    background: linear-gradient(90deg, rgba(112, 28, 160,1) 0%, rgb(175, 134, 19) 78%);
+
+}
+
+.login {
+    margin-top: 20px;
+    font-size: 14px
+}
+.login a {
+    color:rgb(77, 7, 109);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s color;
+}
+.login a:hover {
+    color:black;
+}

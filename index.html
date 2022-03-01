@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="wrapper">
+        <div class="leftSide">
+            <h2><span class="decorate">Z</span>arejestruj się</h2>
+            <form class="registerForm" action="">
+
+                <div class="username">
+                    <input required type="text" placeholder="Imię">
+                    <input required type="text" placeholder="Nazwisko">
+                </div>
+
+                <div class="password">
+                    <input required minlength="8" type="password" placeholder="Podaj hasło">
+                    <input required minlength="8" type="password" placeholder="Powtórz hasło">
+                </div>
+
+                <div class="email">
+                    <input type="email" placeholder="Podaj adres email">
+                </div>
+
+                <div class="city">
+                    <input type="text" placeholder="Miejscowość">
+                    <select name="" id="">
+                        <option value="">Śląskie</option>
+                        <option value="">Małopolskie</option>
+                        <option value="">Mazowieckie</option>
+                    </select>
+                </div>
+
+                <div class="agree">
+                    <input class="check" type="checkbox" id="agree">
+                    <label for="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych</label>
+                </div>
+
+                <input class="submitBtn" type="submit" value="Wyślij">
+
+            </form>
+
+            <p class="login">Masz już konto? <a href="./login.html">Zaloguj się</a></p>
+        </div>
+
+        <div class="rightSide">
+            
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
